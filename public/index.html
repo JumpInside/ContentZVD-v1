@@ -485,6 +485,109 @@ section{padding:56px 16px;}
   .topbar{padding-left:12px;padding-right:12px;}
   .float-btn{font-size:10px;padding:10px 14px;}
 }
+
+/* ── TABLET (≥600px) ── */
+@media(min-width:600px){
+  body{max-width:720px;font-size:15px;}
+  .topbar{max-width:720px;}
+  .modal-sheet,.prof-sheet{max-width:720px;}
+  section{padding:64px 32px;}
+  .hero h1{font-size:52px;}
+  .hero-sub{font-size:16px;max-width:480px;}
+  .hero-btns{max-width:480px;}
+  .sec-title{font-size:32px;}
+  .sec-sub{font-size:14px;}
+  .btn-gold,.btn-outline{font-size:13px;padding:18px 32px;}
+  .hm-num{font-size:28px;}
+  .slots-grid{grid-template-columns:repeat(10,1fr);gap:5px;}
+  .step{padding:24px 20px;}
+  .step-num{font-size:32px;min-width:56px;}
+  .step-title{font-size:13px;}
+  .step-desc{font-size:13px;}
+  .plan-card{padding:28px 24px;}
+  .plan-name{font-size:22px;}
+  .plan-price{font-size:16px;}
+  .plan-sub{font-size:13px;}
+  .plan-list li{font-size:13px;}
+  .contact-cards{flex-direction:row;}
+  .final-btns{max-width:480px;}
+  .urg-num{font-size:72px;}
+  .urg-text strong{font-size:15px;}
+  .urg-text p{font-size:13px;}
+  .review-card{padding:24px 20px;}
+  .rc-quote{font-size:14px;}
+  .prof-card{padding:20px;}
+  .pc-name{font-size:13px;}
+  .float-btn{font-size:12px;padding:14px 20px;}
+}
+
+/* ── DESKTOP (≥900px) ── */
+@media(min-width:900px){
+  body{max-width:960px;}
+  .topbar{max-width:960px;padding-top:18px;padding-bottom:18px;}
+  .modal-sheet,.prof-sheet{max-width:600px;}
+  .logo{font-size:16px;}
+  section{padding:80px 48px;}
+  .hero{min-height:100vh;padding-top:100px;}
+  .hero h1{font-size:64px;}
+  .hero-sub{font-size:17px;max-width:540px;}
+  .hero-metrics{gap:40px;margin-bottom:44px;}
+  .hm-num{font-size:34px;}
+  .hm-label{font-size:11px;}
+  .hero-btns{max-width:520px;display:flex;gap:12px;}
+  .hero-btns .btn-gold,.hero-btns .btn-outline{width:auto;flex:1;margin-top:0;}
+  .sec-title{font-size:38px;margin-bottom:14px;}
+  .sec-sub{font-size:15px;margin-bottom:32px;}
+  .tag{font-size:11px;padding:7px 16px;}
+  .slots-grid{gap:6px;max-width:520px;margin-left:auto;margin-right:auto;}
+  .slots-stats{max-width:520px;margin-left:auto;margin-right:auto;}
+  .btn-gold,.btn-outline{font-size:13px;padding:19px 36px;max-width:520px;margin-left:auto;margin-right:auto;}
+  /* Two-column plans */
+  .plan-cards-wrap{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start;}
+  .plan-card{margin-bottom:0;}
+  .plan-card.pro{transform:none;}
+  .plan-name{font-size:24px;}
+  .plan-price{font-size:18px;}
+  /* Profile cards grid */
+  #profileCards{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+  /* Review cards grid */
+  #reviewCards{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+  /* Urgency */
+  .urg-num{font-size:96px;}
+  .urg-list{max-width:640px;margin-left:auto;margin-right:auto;}
+  .urg-text strong{font-size:16px;}
+  .urg-text p{font-size:14px;}
+  /* Steps 2-column */
+  .steps-wrap{display:grid;grid-template-columns:1fr 1fr;gap:4px;}
+  /* Contact cards side by side */
+  .contact-cards{gap:16px;}
+  .contact-card{padding:24px 20px;}
+  .cc-label{font-size:13px;}
+  .cc-value{font-size:13px;}
+  /* Final CTA */
+  .final{min-height:80vh;}
+  .final-btns{max-width:560px;display:flex;gap:12px;}
+  .final-btns .btn-gold,.final-btns .btn-outline{width:auto;flex:1;margin-top:0;}
+  .final-seats-num{font-size:56px;}
+  /* Float buttons */
+  .float-contact{bottom:40px;right:32px;}
+  .float-btn{font-size:12px;padding:14px 22px;border-radius:32px;}
+  /* Progress dots bigger hit area */
+  .prog-dots{right:20px;}
+  .pd{width:5px;height:5px;}
+  .pd.on{height:20px;}
+}
+
+/* ── WIDE DESKTOP (≥1200px) ── */
+@media(min-width:1200px){
+  body{max-width:1100px;}
+  .topbar{max-width:1100px;padding-left:32px;padding-right:32px;}
+  section{padding:100px 64px;}
+  .hero h1{font-size:72px;}
+  .hero-sub{font-size:18px;max-width:600px;}
+  .sec-title{font-size:44px;}
+  .sec-sub{font-size:16px;}
+}
 </style>
 </head>
 <body>
@@ -590,7 +693,7 @@ section{padding:56px 16px;}
 <section id="sec6">
   <div class="tag rv">Механіка</div>
   <h2 class="sec-title rv d1">Як це <em>працює</em></h2>
-  <div style="margin-top:8px">
+  <div class="steps-wrap" style="margin-top:8px">
     <div class="step rv d1">
       <div class="step-num">0</div>
       <div><div class="step-title">Нульовий день — завантаження ТЗ</div><div class="step-desc">Заповнюєш бриф у Mini App: ніша, стиль, цілі. Менеджер формує план виробництва.</div></div>
@@ -616,6 +719,7 @@ section{padding:56px 16px;}
   <h2 class="sec-title rv d1">Обери свій <em>план</em></h2>
   <p class="sec-sub rv d2">Обидва плани включають гарантію 1 000 000 переглядів за 30 днів</p>
 
+  <div class="plan-cards-wrap">
   <!-- START -->
   <div class="plan-card rv d2">
     <div class="plan-name">START</div>
@@ -649,6 +753,7 @@ section{padding:56px 16px;}
     </ul>
     <button class="btn-gold" onclick="openReg('pro')">Обрати PRO</button>
   </div>
+  </div><!-- /plan-cards-wrap -->
 
   <p class="plan-warn rv d4">⚠ Ціна наступного місяця буде вищою. Поточний тариф фіксується тільки при оплаті зараз.</p>
 </section>
