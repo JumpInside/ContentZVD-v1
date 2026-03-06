@@ -600,6 +600,23 @@
     background: var(--gold);
     color: var(--black);
   }
+  .pricing-sub {
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  .only-pro-badge {
+    display: inline-block;
+    background: rgba(200,168,75,0.15);
+    color: var(--gold);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 2px 6px;
+    margin-left: 4px;
+    vertical-align: middle;
+  }
   .price-warning {
     margin-top: 32px;
     text-align: center;
@@ -1286,30 +1303,35 @@
     <h2 class="slide-title reveal reveal-d1" style="text-align:center">Инвестиция<br>в <em>свой рост</em></h2>
     <div class="pricing-grid">
       <div class="pricing-card reveal reveal-d2">
-        <div class="pricing-label">Старт</div>
-        <div class="pricing-price"><sup>$</sup>500</div>
-        <div class="pricing-period">в месяц · 1 слот</div>
+        <div class="pricing-label">START</div>
+        <div class="pricing-price"><sup>€</sup>500</div>
+        <div class="pricing-period">в месяц</div>
+        <div class="pricing-sub">Контент-конвейер под ключ. Мы делаем — ты публикуешь. Стабильный рост и выход на миллионные охваты.</div>
         <ul class="pricing-features">
-          <li><span>✓</span><span>Профиль с аналитикой</span></li>
-          <li><span>✓</span><span>Контент-стратегия</span></li>
-          <li><span>✓</span><span>До 12 единиц контента</span></li>
-          <li><span>✓</span><span>Позиция в очереди</span></li>
-          <li><span>✓</span><span>Личный кабинет</span></li>
+          <li><span>✓</span><span>3–5 Reels каждый день (количество согласовываем с клиентом)</span></li>
+          <li><span>✓</span><span>Усиливаем тему Клиента — ищем видео и монтируем под ключ</span></li>
+          <li><span>✓</span><span>Клиент записывает реакции или даёт видео продукта (можно и то, и то)</span></li>
+          <li><span>✓</span><span>Добавляем оферы на видео, если нужно</span></li>
+          <li><span>✓</span><span>Подбор актуальных форматов</span></li>
+          <li><span>✓</span><span>Можем вместо клиента выкладывать контент</span></li>
+          <li><span>✓</span><span>Полная прозрачная аналитика контента</span></li>
         </ul>
-        <button class="pricing-btn" onclick="document.getElementById('v0RegOverlay').classList.add('open')">Занять слот</button>
+        <button class="pricing-btn" onclick="document.getElementById('v0RegOverlay').classList.add('open')">Занять слот START</button>
       </div>
       <div class="pricing-card featured reveal reveal-d3">
-        <div class="pricing-label">Pro</div>
-        <div class="pricing-price"><sup>$</sup>1000</div>
-        <div class="pricing-period">в месяц · 1 слот</div>
+        <div class="pricing-label">PRO</div>
+        <div class="pricing-price"><sup>€</sup>990</div>
+        <div class="pricing-period">в месяц</div>
+        <div class="pricing-sub">Всё из Start — 3–5 Reels, монтаж, публикация, аналитика. Плюс стратегия, персональный менеджер и узкая ниша.</div>
         <ul class="pricing-features">
-          <li><span>✓</span><span>Всё из тарифа Старт</span></li>
-          <li><span>✓</span><span>До 30 единиц контента</span></li>
-          <li><span>✓</span><span>Приоритет в очереди</span></li>
-          <li><span>✓</span><span>Персональный менеджер</span></li>
-          <li><span>✓</span><span>Расширенная аналитика</span></li>
+          <li><span>✓</span><span>Всё из пакета Start — 3–5 Reels, монтаж, публикация, аналитика</span></li>
+          <li><span>✓</span><span>Стратегическая сессия — строим план интеграции продукта клиента в каждое видео</span></li>
+          <li><span>✓</span><span>Интеграция продукта и офферов стратегически в контент</span></li>
+          <li><span>✓</span><span>Приоритетная очередь на правки</span></li>
+          <li><span>✓</span><span>Контент под узкую нишу — адвокат? Ищем видео о семейных делах. Фитнес-тренер? Контент о спортзале и весе <span class="only-pro-badge">ТОЛЬКО ЭКСПЕРТ</span></span></li>
+          <li><span>✓</span><span>Персональный проджект-менеджер — контролирует всю работу, реализует коррективы мгновенно <span class="only-pro-badge">ТОЛЬКО ЭКСПЕРТ</span></span></li>
         </ul>
-        <button class="pricing-btn" onclick="document.getElementById('v0RegOverlay').classList.add('open')">Занять слот Pro</button>
+        <button class="pricing-btn" onclick="document.getElementById('v0RegOverlay').classList.add('open')">Занять слот PRO</button>
       </div>
     </div>
     <div class="price-warning reveal reveal-d3" style="margin-top:32px;">

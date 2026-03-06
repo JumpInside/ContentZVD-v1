@@ -523,25 +523,25 @@ section{padding:56px 16px;}
 
 /* ── DESKTOP (≥900px) ── */
 @media(min-width:900px){
-  body{max-width:960px;}
-  .topbar{max-width:960px;padding-top:18px;padding-bottom:18px;}
+  body{max-width:100%;margin:0 auto;}
+  .topbar{max-width:100%;padding-top:18px;padding-bottom:18px;left:0;transform:none;padding-left:48px;padding-right:48px;}
   .modal-sheet,.prof-sheet{max-width:600px;}
   .logo{font-size:16px;}
   section{padding:80px 48px;}
   .hero{min-height:100vh;padding-top:100px;}
   .hero h1{font-size:64px;}
-  .hero-sub{font-size:17px;max-width:540px;}
+  .hero-sub{font-size:17px;max-width:600px;}
   .hero-metrics{gap:40px;margin-bottom:44px;}
   .hm-num{font-size:34px;}
   .hm-label{font-size:11px;}
-  .hero-btns{max-width:520px;display:flex;gap:12px;}
+  .hero-btns{max-width:560px;display:flex;gap:12px;}
   .hero-btns .btn-gold,.hero-btns .btn-outline{width:auto;flex:1;margin-top:0;}
   .sec-title{font-size:38px;margin-bottom:14px;}
   .sec-sub{font-size:15px;margin-bottom:32px;}
   .tag{font-size:11px;padding:7px 16px;}
-  .slots-grid{gap:6px;max-width:520px;margin-left:auto;margin-right:auto;}
-  .slots-stats{max-width:520px;margin-left:auto;margin-right:auto;}
-  .btn-gold,.btn-outline{font-size:13px;padding:19px 36px;max-width:520px;margin-left:auto;margin-right:auto;}
+  .slots-grid{gap:6px;max-width:700px;margin-left:auto;margin-right:auto;}
+  .slots-stats{max-width:700px;margin-left:auto;margin-right:auto;}
+  .btn-gold,.btn-outline{font-size:13px;padding:19px 36px;max-width:560px;margin-left:auto;margin-right:auto;}
   /* Two-column plans */
   .plan-cards-wrap{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start;}
   .plan-card{margin-bottom:0;}
@@ -549,12 +549,12 @@ section{padding:56px 16px;}
   .plan-name{font-size:24px;}
   .plan-price{font-size:18px;}
   /* Profile cards grid */
-  #profileCards{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+  #profileCards{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
   /* Review cards grid */
-  #reviewCards{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+  #reviewCards{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
   /* Urgency */
   .urg-num{font-size:96px;}
-  .urg-list{max-width:640px;margin-left:auto;margin-right:auto;}
+  .urg-list{max-width:800px;margin-left:auto;margin-right:auto;}
   .urg-text strong{font-size:16px;}
   .urg-text p{font-size:14px;}
   /* Steps 2-column */
@@ -566,7 +566,7 @@ section{padding:56px 16px;}
   .cc-value{font-size:13px;}
   /* Final CTA */
   .final{min-height:80vh;}
-  .final-btns{max-width:560px;display:flex;gap:12px;}
+  .final-btns{max-width:600px;display:flex;gap:12px;}
   .final-btns .btn-gold,.final-btns .btn-outline{width:auto;flex:1;margin-top:0;}
   .final-seats-num{font-size:56px;}
   /* Float buttons */
@@ -580,13 +580,23 @@ section{padding:56px 16px;}
 
 /* ── WIDE DESKTOP (≥1200px) ── */
 @media(min-width:1200px){
-  body{max-width:1100px;}
-  .topbar{max-width:1100px;padding-left:32px;padding-right:32px;}
-  section{padding:100px 64px;}
+  body{max-width:100%;}
+  .topbar{max-width:100%;padding-left:64px;padding-right:64px;}
+  section{padding:100px 80px;}
   .hero h1{font-size:72px;}
-  .hero-sub{font-size:18px;max-width:600px;}
+  .hero-sub{font-size:18px;max-width:660px;}
   .sec-title{font-size:44px;}
   .sec-sub{font-size:16px;}
+  .slots-grid{max-width:800px;}
+  .slots-stats{max-width:800px;}
+  .hero-btns{max-width:620px;}
+  .btn-gold,.btn-outline{max-width:620px;}
+  .plan-cards-wrap{gap:24px;}
+  #profileCards{grid-template-columns:1fr 1fr 1fr;gap:16px;}
+  #reviewCards{grid-template-columns:1fr 1fr 1fr;gap:16px;}
+  .steps-wrap{gap:8px;}
+  .urg-list{max-width:900px;}
+  .final-btns{max-width:660px;}
 }
 </style>
 </head>
